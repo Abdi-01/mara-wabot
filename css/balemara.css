@@ -189,3 +189,21 @@
     font-family: 'Donegal One', serif;
     font-size: 13pt;
 }
+
+.product {
+    transition: 0.5s;
+    margin: 2em;
+}
+
+.product:hover {
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    z-index: 9;
+}
+
+.product img {
+    width: 19vw;
+    padding: 10px;
+    max-height: 50vh;
+}
