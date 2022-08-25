@@ -31,7 +31,7 @@ jobs:
         with:
           src: ./*
           host: ${{secrets.SSH_HOST}}
-          remote: ${{secrets.SSH_DESTINATION}}
+          remote: "${{secrets.SSH_DESTINATION}}"
           port: ${{secrets.SSH_PORT}}
           username: ${{secrets.SSH_USER}}
           key: ${{secrets.SSH_KEY}}
