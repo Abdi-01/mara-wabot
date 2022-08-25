@@ -1,0 +1,44 @@
+.catalogue-section {
+    background-color: #DBDBDB;
+}
+
+.catalogue-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.catalogue-container h4 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.outlet-section {
+    background-image: url("../image/sutleng/waves/wave.png");
+}
+
+.outlet-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.outlet-container h4 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contact-section {
+    background-image: url("../image/sutleng/waves/contact.svg");
+}
+
+.gallery-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery-container h4 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
