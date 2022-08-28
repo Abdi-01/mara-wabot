@@ -42,3 +42,40 @@
     font-size: 40px;
     font-weight: 700;
 }
+
+.contact-section {
+    background-color: #333333;
+}
+
+.contact-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-container h4 {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-container .sub-contact a {
+    /* font-size: 20pt; */
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-container .sub-contact a:hover {
+    /* font-size: 20pt; */
+    text-decoration: underline;
+    color: black;
+}
