@@ -51,7 +51,7 @@
 }
 
 .contact-section {
-    background-color: #969696;
+    background-color: #333333;
 }
 
 .contact-container {
@@ -60,9 +60,10 @@
 }
 
 .contact-container h4 {
-    font-size: 40px;
+    color: white;
+    font-size: 15px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     padding-bottom: 10px;
 }
 
@@ -71,6 +72,19 @@
     font-weight: 200;
     text-align: center;
     padding-bottom: 10px;
+}
+
+.contact-container .sub-contact a {
+    /* font-size: 20pt; */
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-container .sub-contact a:hover {
+    /* font-size: 20pt; */
+    text-decoration: underline;
+    color: black;
 }
 
 .card {
