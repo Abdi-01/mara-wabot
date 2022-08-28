@@ -2,39 +2,6 @@
     background-color: #111111;
 }
 
-.first-section {
-    background: url('../materi/balemara/DRONE_SHOT_02.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: inset 0px 0px 800px 600px rgb(0, 0, 0, 0.4);
-}
-
-.first-container {
-    height: 100vh;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.first-container .row {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.first-container .row .col #span1 {
-    color: white;
-    font-family: 'Donegal One', serif;
-    font-size: 40pt;
-}
-
-.first-container .row .col #span2 {
-    color: white;
-    font-family: 'Donegal One', serif;
-    font-size: 55pt;
-}
-
 .facilities-section {
     background: url('../materi/balemara/DRONE_SHOT_01.jpg');
     background-repeat: no-repeat;
@@ -50,36 +17,24 @@
 }
 
 .facilities-container .row {
-    color: white;
+    /* color: white; */
     font-family: 'Donegal One', serif;
 }
 
-.span-fac-1 {
-    display: inline-block;
-    width: 13vw;
-    border: 1px solid white;
-    padding: 8px 10px;
-    border-radius: 25px;
-}
-
-.span-fac-2 {
-    display: inline-block;
-    width: 13vw;
-    background-color: white;
-    padding: 8px 10px;
-    color: black;
-    border-radius: 25px;
-}
-
+.about-section,
+.rooms-section,
 .specialOffers-section {
     background-color: #EBE9EA;
 }
 
+.about-container,
+.rooms-container,
 .special-container {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.rooms-container h4,
 .special-container h4 {
     font-size: 30px;
     font-weight: 700;
@@ -87,9 +42,11 @@
     padding-bottom: 10px;
 }
 
+.about-container h5,
+.rooms-container h5,
 .special-container h5 {
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 28px;
+    font-weight: 700;
     text-align: start;
     padding-bottom: 10px;
 }
@@ -111,7 +68,7 @@
 }
 
 .contact-section {
-    background-color: #B59A87;
+    background-color: #333333;
 }
 
 .contact-container {
@@ -120,9 +77,10 @@
 }
 
 .contact-container h4 {
-    font-size: 40px;
+    color: white;
+    font-size: 15px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     padding-bottom: 10px;
 }
 
@@ -131,6 +89,19 @@
     font-weight: 200;
     text-align: center;
     padding-bottom: 10px;
+}
+
+.contact-container .sub-contact a {
+    /* font-size: 20pt; */
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-container .sub-contact a:hover {
+    /* font-size: 20pt; */
+    text-decoration: underline;
+    color: black;
 }
 
 .termConditions-section {
@@ -203,7 +174,6 @@
 }
 
 .product img {
-    width: 19vw;
+    width: 25vw;
     padding: 10px;
-    max-height: 50vh;
 }
