@@ -322,6 +322,7 @@
 
 #slider-footer {
     margin-left: 25px;
+    margin-right: 25px;
 }
 
 @media (min-width: 768px) {
@@ -331,8 +332,5 @@
     }
     .service-content {
         margin-left: 0;
-    }
-    #slider-footer {
-        margin-left: 50px;
     }
 }

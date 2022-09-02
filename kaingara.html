@@ -87,7 +87,40 @@
             </div>
         </nav>
         <!-- Akhir Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
 
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                    <!-- Left links -->
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#special-offers">Special Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rooms-offers">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#facilities-offers">Facilities</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li> -->
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
         <!-- content -->
         <section style="background-color: #FEE6D3;">
             <div class="container">
@@ -102,7 +135,9 @@
                         <button class="btn btn-default filter-button" data-filter="rent">Rent</button>
                     </div>
                 </div>
+                <div class="row" id="all-content"> </div>
                 <div class="row" id="kebaya-content"> </div>
+                <div class="row" id="kaet-content"> </div>
                 <div class="row" id="rtw-content"> </div>
             </div>
         </section>
@@ -255,21 +290,38 @@
         $(document).ready(function() {
             let kebayaContent = "";
             let rtwContent = "";
+            let allContent = "";
+            let kaetContent = "";
+
             let randVal;
-            for (let i = 1; i <= 20; i++) {
-                randVal = Math.floor(Math.random() * 46);
+            for (let i = 1; i <= 12; i++) {
+                randVal = Math.floor(Math.random() * 12);
+                allContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter all">
+                        <img src="MARA GROUP/KAINGARA/ALL/all (${i}).jpg" title="Product name" alt="Product name">
+                    </div>`;
+            }
+            $("#all-content").append(allContent);
+            for (let i = 1; i <= 12; i++) {
+                randVal = Math.floor(Math.random() * 45) + 1;
                 kebayaContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kebaya">
                         <img src="MARA GROUP/KAINGARA/KEBAYA/kebaya (${randVal}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#kebaya-content").append(kebayaContent);
-            for (let i = 1; i <= 20; i++) {
-                randVal = Math.floor(Math.random() * 55);
+            for (let i = 1; i <= 12; i++) {
+                randVal = Math.floor(Math.random() * 54) + 1;
                 rtwContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter rtw">
                         <img src="MARA GROUP/KAINGARA/RTW/rtw (${randVal}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
-            $("#kebaya-content").append(rtwContent);
+            $("#rtw-content").append(rtwContent);
+            for (let i = 1; i <= 12; i++) {
+                randVal = Math.floor(Math.random() * 37) + 1;
+                kaetContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kaet">
+                        <img src="MARA GROUP/KAINGARA/KAET BY Kaingara/kaet (${randVal}).jpg" title="Product name" alt="Product name">
+                    </div>`;
+            }
+            $("#kaet-content").append(kaetContent);
         });
     </script>
 </body>
