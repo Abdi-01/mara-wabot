@@ -28,8 +28,8 @@
         }
         
         .figure img {
-            width: 40%;
-            height: 40%;
+            width: 80%;
+            height: 80%;
         }
         
         .slick-slide img {
@@ -103,40 +103,6 @@
             </div>
         </nav>
         <!-- Akhir Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!-- Container wrapper -->
-            <div class="container-fluid">
-                <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-                    <!-- Left links -->
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#special-offers">Special Offers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#rooms-offers">Rooms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#facilities-offers">Facilities</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Activities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                        </li> -->
-                    </ul>
-                    <!-- Left links -->
-                </div>
-                <!-- Collapsible wrapper -->
-            </div>
-            <!-- Container wrapper -->
-        </nav>
         <!-- content -->
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #23494e">
             <!-- Container wrapper -->
@@ -172,6 +138,28 @@
             </div>
             <!-- Container wrapper -->
         </nav>
+        <div class="first-content">
+            <img src="MARA GROUP/SUDUT LENGGAH/background.jpg" style="background-repeat: no-repeat;width: 100vw;height: 100vh;">
+        </div>
+
+        <section class="about-section" id="about-offers">
+            <div class="container about-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About</h5>
+                    </div>
+                </div>
+                <div class="row text-center pt-2">
+                    <div class="col">
+                        <span style="font-family:  Georgia, 'Times New Roman', Times, serif;font-size: 30pt;">S U D U T &nbsp; L E N G G A H</span><br><br>
+                        <span>
+                            Logotype dengan font yang memberikan kesan mewah dan dilengkapi dengan sebuah logogram dibawah deskriptor yang mewakili tanaman dan juga rempah-rempah. Tanaman yang memberikan suasana homey dan rempah-rempah yang merepresentasikan makanan dan minuman disajikan oleh Sudut Lenggah yang kaya rasa.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="catalogue-section" id="catalogue">
             <div class="container catalogue-container">
                 <div class="row justify-content-center">
@@ -381,14 +369,16 @@
     <script>
         $(".catalogue-content ").slick({
             autoplay: false,
-            slidesToShow: 1,
+            slidesToShow: 2,
             autoplaySpeed: 3000,
+            // prevArrow: '<i class="bx bxs-chevron-left"></i>',
+            // nextArrow: '<i class="bx bxs-chevron-right"></i>',
             responsive: [{
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                 },
-            }, ],
+            }],
         });
     </script>
 </body>
