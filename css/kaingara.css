@@ -1,3 +1,19 @@
+.about-section {
+    background-color: #f2f2f2;
+}
+
+.about-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-container h5 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
 .collections h4 {
     text-transform: uppercase;
     font-size: 40px;

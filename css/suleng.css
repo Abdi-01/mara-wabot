@@ -1,3 +1,20 @@
+.about-section {
+    background-color: #F7F5ED;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-container h5 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
 .catalogue-section {
     background-color: #DBDBDB;
 }

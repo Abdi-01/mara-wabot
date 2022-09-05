@@ -1,6 +1,24 @@
+.about-section {
+    background-color: #F7F5ED;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-container h5 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: start;
+    padding-bottom: 10px;
+}
+
 .bg-light {
     background-color: #F1F1F1;
 }
+
 .services h4 {
     text-transform: uppercase;
     font-size: 40px;
@@ -8,6 +26,7 @@
     font-family: Playfair display;
     color: #333333;
 }
+
 .services p {
     font-size: 18px;
     color: #6D6D6D;
@@ -17,49 +36,40 @@
 
 [data-tab-content] {
     display: none;
-  }
-  
-  .active[data-tab-content] {
+}
+
+.active[data-tab-content] {
     display: block;
-  }
-  
-  body {
+}
+
+body {
     padding: 0;
     margin: 0;
-  }
-  
-  .tabs {
+}
+
+.tabs {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
     border-bottom: 1px solid black;
-  }
-  
-  .tab {
+}
+
+.tab {
     cursor: pointer;
     padding: 10px;
-  }
-  
-  .tab.active {
+}
+
+.tab.active {
     background-color: #CCC;
-  }
-  
-  .tab:hover {
+}
+
+.tab:hover {
     background-color: #AAA;
-  }
-  
-  .tab-content {
+}
+
+.tab-content {
     margin-left: 20px;
     margin-right: 20px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}
