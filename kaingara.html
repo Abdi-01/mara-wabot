@@ -100,13 +100,10 @@
                     <!-- Left links -->
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#special-offers">Special Offers</a>
+                            <a class="nav-link" href="#collections">Collections</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#rooms-offers">Rooms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#facilities-offers">Facilities</a>
+                            <a class="nav-link" href="#pricelist">Price List</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Activities</a>
@@ -142,40 +139,46 @@
                         </span>
                     </div>
                 </div>
+                <div class="row text-center pt-4" id="pricelist">
+                    <div class="col">
+                        <span style="font-family: 'Donegal One', serif;font-size: 30pt;">Price List</span><br><br>
+                        <img src="MARA GROUP/KAINGARA/pricelist.jpg" class="figure-img img-fluid rounded " style="width: 40vw;" alt="... " />
+                    </div>
+                </div>
             </div>
         </section>
         <!-- content -->
-        <section style="background-color: #FEE6D3;">
+        <section style="background-color: #FEE6D3;" id="collections">
             <div class="container">
                 <div class="row">
                     <div class="filter-list">
                         <h3>Collections</h3>
                         <button class="btn btn-default filter-button active" data-filter="all">All Items</button>
                         <button class="btn btn-default filter-button" data-filter="rtw">RTW</button>
-                        <button class="btn btn-default filter-button" data-filter="kebaya">Kebaya</button>
-                        <button class="btn btn-default filter-button" data-filter="gowns">Gowns</button>
+                        <button class="btn btn-default filter-button" data-filter="kebayangowns">Kebaya & Gowns</button>
                         <button class="btn btn-default filter-button" data-filter="kaet">KAET by Kaingara</button>
                         <button class="btn btn-default filter-button" data-filter="rent">Rent</button>
                     </div>
                 </div>
                 <div class="row" id="all-content"> </div>
-                <div class="row" id="kebaya-content"> </div>
+                <div class="row" id="kebayangowns-content"> </div>
                 <div class="row" id="kaet-content"> </div>
                 <div class="row" id="rtw-content"> </div>
+                <div class="row" id="rent-content"> </div>
             </div>
         </section>
 
         <section class="contact-section" id="contact">
             <div class="container contact-container pt-5 pb-5">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-2">
                         <h4>PRODUCT & SERVICES</h4>
                         <div class="sub-contact">
                             <a href=" # ">SUBCRIPTION</a>
                             <a href="# ">ON DEMAND</a>
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-md-2 ">
                         <h4>THE COMPANY</h4>
                         <div class="sub-contact">
                             <a href=" # ">CAREERS</a>
@@ -183,20 +186,20 @@
                             <a href="# ">PRIVACY</a>
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-md-2 ">
                         <h4>HELP</h4>
                         <div class="sub-contact">
                             <a href=" # ">FAQ</a>
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-md-2 ">
                         <h4>CONTACT US</h4>
                         <div class="sub-contact">
 
                             <a href="https://wa.me/628123456789" target="_blank"><img src="image/sosialMediaLogo/whatsapp.png " style="width: 2vw;" alt=" "> +6281-2345-5678</a>
                         </div>
                     </div>
-                    <div class="col ">
+                    <div class="col-md-2 ">
                         <h4>WORKING HOUR</h4>
                         <div class="sub-contact">
                             <span style="color:white;">Monday - Friday <br> 10 AM - 7 PM</span>
@@ -318,33 +321,39 @@
 
             let randVal;
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 12);
                 allContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter all">
                         <img src="MARA GROUP/KAINGARA/ALL/all (${i}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#all-content").append(allContent);
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 45) + 1;
-                kebayaContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kebaya">
+                randVal = Math.floor(Math.random() * 25) + 1;
+                kebayaContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kebayangowns">
                         <img src="MARA GROUP/KAINGARA/KEBAYA/kebaya (${randVal}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
-            $("#kebaya-content").append(kebayaContent);
+            $("#kebayangowns-content").append(kebayaContent);
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 54) + 1;
+                randVal = Math.floor(Math.random() * 25) + 1;
                 rtwContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter rtw">
                         <img src="MARA GROUP/KAINGARA/RTW/rtw (${randVal}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#rtw-content").append(rtwContent);
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 37) + 1;
+                randVal = Math.floor(Math.random() * 25) + 1;
                 kaetContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kaet">
                         <img src="MARA GROUP/KAINGARA/KAET BY Kaingara/kaet (${randVal}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#kaet-content").append(kaetContent);
+            for (let i = 1; i <= 12; i++) {
+                // randVal = Math.floor(Math.random() * 9) + 1;
+                kaetContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter rent">
+                        <img src="MARA GROUP/KAINGARA/RENT/rent (${i}).jpg" title="Product name" alt="Product name">
+                    </div>`;
+            }
+            $("#rent-content").append(kaetContent);
         });
     </script>
 </body>

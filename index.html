@@ -254,7 +254,7 @@
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="d-flex justify-content-center"><button class="btn btn-block btn-warning btn-rounded text-white" style="font-weight: bold;">Send
+                            <div class="d-flex justify-content-center"><button class="btn btn-block btn-rounded text-white" style="font-weight: bold;background-color: #B76C29 !important;">Send
                                     Message</button>
                             </div>
                         </form>
@@ -382,7 +382,8 @@
         function handleClick() {
             let nama = $('#name').val();
             let pesan = $('#messageTxt').val();
-            window.location.href = "https://wa.me/6282144162323?text=Hallo perkenalkan nama saya " + nama + ", " + pesan;
+            window.open("https://wa.me/6282144162323?text=Hallo perkenalkan nama saya " + nama + ", " + pesan, '_blank');
+            // window.location.href = "https://wa.me/6282144162323?text=Hallo perkenalkan nama saya " + nama + ", " + pesan;
         }
     </script>
 </body>
