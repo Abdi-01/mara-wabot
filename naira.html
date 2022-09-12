@@ -27,6 +27,34 @@
             background-color: #5E6133;
         }
         
+        .slick-prev:before {
+            content: "<";
+        }
+        
+        .slick-next:before {
+            content: ">";
+        }
+        
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: initial!important;
+            color: rgb(72, 71, 71);
+            font-size: 40px;
+        }
+        
+        .figure-pl img {
+            width: 90%;
+            height: 90%;
+        }
+        
+        .pricelist-content {
+            text-align: -webkit-center;
+        }
+        
+        .figure img {
+            width: 450px;
+        }
+        
         @media (max-width: 768px) {
             #dual-collapse2 {
                 text-align: center;
@@ -101,9 +129,6 @@
                     <!-- Left links -->
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#special-offers">Special Offers</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#rooms-offers">Rooms</a>
                         </li>
                         <li class="nav-item">
@@ -143,113 +168,99 @@
                 </div>
             </div>
         </section>
-        <div class="container mb-5">
-            <div class="row">
-                <div class="filter-list">
-                    <ul class="tabs">
-                        <li data-tab-target="#home" class="active tab">Hair</li>
-                        <li data-tab-target="#pricing" class="tab">Face</li>
-                        <li data-tab-target="#about" class="tab">Body</li>
-                        <li data-tab-target="#news" class="tab">Info & Promo</li>
-                    </ul>
 
-
+        <section class="about-section" id="catalogue">
+            <div class="container catalogue-container">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-4">
+                        <h4>Gallery</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class=" gallery-content text-center ">
+                        <div>
+                            <div class="col ">
+                                <figure class="figure figure-gallery ">
+                                    <img src="MARA GROUP/NAIRA/GALLERY/GALLERY (1).jpg " class="figure-img img-fluid rounded " alt="... " />
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col ">
+                                <figure class="figure figure-gallery ">
+                                    <img src="MARA GROUP/NAIRA/GALLERY/GALLERY (2).jpg " class="figure-img img-fluid rounded " alt="... " />
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col ">
+                                <figure class="figure figure-gallery ">
+                                    <img src="MARA GROUP/NAIRA/GALLERY/GALLERY (3).jpg " class="figure-img img-fluid rounded " alt="... " />
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col ">
+                                <figure class="figure figure-gallery ">
+                                    <img src="MARA GROUP/NAIRA/GALLERY/GALLERY (4).jpg " class="figure-img img-fluid rounded " alt="... " />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="tab-content">
-                    <div id="home" data-tab-content class="active">
-                        <div class="row justify-content-between">
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="pricing" data-tab-content>
-                        <div class="row justify-content-between">
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="about" data-tab-content>
-                        <div class="row justify-content-between">
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="news" data-tab-content>
-                        <div class="row justify-content-between">
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        </section>
+        <section class="about-section">
 
+            <div class="container">
+                <div class="container catalogue-container">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-md-4">
+                            <h4>Price List</h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class=" pricelist-content  ">
+                            <div>
+                                <div class="col ">
+                                    <figure class="figure-pl figure-gallery ">
+                                        <img src="MARA GROUP/NAIRA/PRICELIST/Treatment Naira_page-0001.jpg" class="figure-img img-fluid rounded " alt="... " />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col ">
+                                    <figure class="figure-pl figure-gallery ">
+                                        <img src="MARA GROUP/NAIRA/PRICELIST/Treatment Naira_page-0002.jpg" class="figure-img img-fluid rounded " alt="... " />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col ">
+                                    <figure class="figure-pl figure-gallery ">
+                                        <img src="MARA GROUP/NAIRA/PRICELIST/Treatment Naira_page-0003.jpg" class="figure-img img-fluid rounded " alt="... " />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col ">
+                                    <figure class="figure-pl figure-gallery ">
+                                        <img src="MARA GROUP/NAIRA/PRICELIST/Treatment Naira_page-0004.jpg" class="figure-img img-fluid rounded " alt="... " />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col ">
+                                    <figure class="figure-pl figure-gallery ">
+                                        <img src="MARA GROUP/NAIRA/PRICELIST/Treatment Naira_page-0005.jpg" class="figure-img img-fluid rounded " alt="... " />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="contact-section " id="contact ">
             <div class="container contact-container pt-5 pb-5 ">
@@ -324,45 +335,29 @@
 
     <script src="js/kutamara.js"></script>
     <script>
-        const tabs = document.querySelectorAll('[data-tab-target]')
-        const tabContents = document.querySelectorAll('[data-tab-content]')
+        $(".gallery-content").slick({
+            autoplay: false,
+            slidesToShow: 2,
+            autoplaySpeed: 3000,
+            responsive: [{
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                },
+            }],
+        });
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = document.querySelector(tab.dataset.tabTarget)
-                tabContents.forEach(tabContent => {
-                    tabContent.classList.remove('active')
-                })
-                tabs.forEach(tab => {
-                    tab.classList.remove('active')
-                })
-                tab.classList.add('active')
-                target.classList.add('active')
-            })
-        })
-    </script>
-    <script>
-        // Image Functions
-        function showImage(imgPath, imgText, galleryId) {
-            var curImage = document.getElementById('currentImg-' + galleryId);
-            curImage.src = imgPath;
-            curImage.alt = imgText;
-            curImage.title = imgText;
-        }
-
-        function changeActiveState(value) {
-            var el = document.getElementById('carousel-' + value);
-            var list = el.getElementsByTagName("img");
-            var curImage = document.getElementById('currentImg-' + value);
-            curImage.src = list[1].src;
-            curImage.alt = list[1].alt;
-            curImage.title = list[1].alt;
-            var arr = document.getElementsByClassName('carousel-item');
-            for (var i = 0; i < arr.length; i++) {
-                arr[i].classList.remove('active');
-            }
-            el.classList.add('active');
-        }
+        $(".pricelist-content").slick({
+            autoplay: false,
+            slidesToShow: 2,
+            autoplaySpeed: 3000,
+            responsive: [{
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                },
+            }],
+        });
     </script>
 
 </body>
