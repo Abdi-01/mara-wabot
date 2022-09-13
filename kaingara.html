@@ -30,6 +30,9 @@
             #dual-collapse2 {
                 text-align: center;
             }
+            .product img {
+                width: 70vw;
+            }
         }
     </style>
 
@@ -100,10 +103,10 @@
                     <!-- Left links -->
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#collections">Collections</a>
+                            <a class="nav-link" href="#pricelist">Price List</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricelist">Price List</a>
+                            <a class="nav-link" href="#collections">Collections</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Activities</a>
@@ -160,11 +163,11 @@
                         <button class="btn btn-default filter-button" data-filter="rent">Rent</button>
                     </div>
                 </div>
-                <div class="row" id="all-content"> </div>
-                <div class="row" id="kebayangowns-content"> </div>
-                <div class="row" id="kaet-content"> </div>
-                <div class="row" id="rtw-content"> </div>
-                <div class="row" id="rent-content"> </div>
+                <div class="row text-center" id="all-content"> </div>
+                <div class="row text-center" id="kebayangowns-content"> </div>
+                <div class="row text-center" id="kaet-content"> </div>
+                <div class="row text-center" id="rtw-content"> </div>
+                <div class="row text-center" id="rent-content"> </div>
             </div>
         </section>
 
@@ -318,43 +321,63 @@
             let rtwContent = "";
             let allContent = "";
             let kaetContent = "";
+            let rentContent = "";
 
             let randVal;
+            let max = 25;
+            let loop = 12;
             for (let i = 1; i <= 12; i++) {
                 allContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter all">
                         <img src="MARA GROUP/KAINGARA/ALL/all (${i}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#all-content").append(allContent);
+            randVal = randNoRepetition(max,loop);
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 25) + 1;
                 kebayaContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kebayangowns">
-                        <img src="MARA GROUP/KAINGARA/KEBAYA/kebaya (${randVal}).jpg" title="Product name" alt="Product name">
+                        <img src="MARA GROUP/KAINGARA/KEBAYA/kebaya (${randVal[i-1]}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#kebayangowns-content").append(kebayaContent);
+            randVal = randNoRepetition(max,loop);
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 25) + 1;
                 rtwContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter rtw">
-                        <img src="MARA GROUP/KAINGARA/RTW/rtw (${randVal}).jpg" title="Product name" alt="Product name">
+                        <img src="MARA GROUP/KAINGARA/RTW/rtw (${randVal[i-1]}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#rtw-content").append(rtwContent);
+            randVal = randNoRepetition(max,loop);
             for (let i = 1; i <= 12; i++) {
-                randVal = Math.floor(Math.random() * 25) + 1;
                 kaetContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter kaet">
-                        <img src="MARA GROUP/KAINGARA/KAET BY Kaingara/kaet (${randVal}).jpg" title="Product name" alt="Product name">
+                        <img src="MARA GROUP/KAINGARA/KAET BY Kaingara/kaet (${randVal[i-1]}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
             $("#kaet-content").append(kaetContent);
+            randVal = randNoRepetition(max,loop);
             for (let i = 1; i <= 12; i++) {
-                // randVal = Math.floor(Math.random() * 9) + 1;
-                kaetContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter rent">
+                rentContent += `<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 product filter rent">
                         <img src="MARA GROUP/KAINGARA/RENT/rent (${i}).jpg" title="Product name" alt="Product name">
                     </div>`;
             }
-            $("#rent-content").append(kaetContent);
+            $("#rent-content").append(rentContent);
         });
+
+        function randNoRepetition(max,loop){
+            arr=[];
+            for (i = 0; i < max; i++) {
+                if(i == loop)
+                    break;
+                x = Math.floor( Math.random() * max) + 1;
+                if(arr.includes(x) == true){
+                    i=i-1;
+                }else{
+                    if(x>max==false){
+                        arr.push(x);
+                    }
+                }
+            }
+            return arr;
+        }
     </script>
 </body>
 
