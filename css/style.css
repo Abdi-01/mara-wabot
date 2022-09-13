@@ -296,10 +296,16 @@
     text-align: center;
 }
 
-.figure figcaption a {
+.figure figcaption a,
+#btnSend {
     background-color: #B76C29;
     border-radius: 20px;
     display: block;
+}
+
+.figure figcaption a:hover,
+#btnSend:hover {
+    background-color: #284864;
 }
 
 @media (min-width: 992px) {
