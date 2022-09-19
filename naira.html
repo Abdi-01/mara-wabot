@@ -61,17 +61,32 @@
         }
         
         @font-face {
-            font-family: 'JasminReguler';
-            src: url('font/Jasmin\ Regular.ttf') format('truetype');
+            font-family: 'bodoni';
+            src: url('font/BodoniXT.ttf') format('truetype');
             /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
         }
-        /* * {
-            font-family: "JasminReguler" !important;
+        
+        .headline {
+            font-family: "bodoni" !important;
             font-style: normal;
             -webkit-font-smoothing: antialiased;
             -webkit-text-stroke-width: 0.2px;
             -moz-osx-font-smoothing: grayscale;
-        } */
+        }
+        
+        @font-face {
+            font-family: 'jasminreg';
+            src: url('font/Jazmin\ Regular.otf') format('truetype');
+            /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+        }
+        
+        * {
+            font-family: "jasminreg" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
         
         @media (max-width: 768px) {
             #dual-collapse2 {
@@ -139,8 +154,8 @@
                         </li>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <li class="nav-item">
-                            <button type="button" class="btn btn-outline-light">&nbsp&nbsp&nbsp&nbsp&nbsp Contact
-                                &nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                            <a href="#contact" class="btn btn-outline-light">&nbsp&nbsp&nbsp&nbsp&nbsp Contact
+                                &nbsp&nbsp&nbsp&nbsp&nbsp</a>
                         </li>
                     </ul>
                 </div>
@@ -191,7 +206,7 @@
                 </div>
                 <div class="row text-center pt-2">
                     <div class="col">
-                        <span style="font-family:  Georgia, 'Times New Roman', Times, serif;font-size: 30pt;">N A I R A</span><br><br>
+                        <span class="headline" style="font-size: 30pt;">N A I R A</span><br><br>
                         <span>
                             Simbol yang terinspirasi dari bentuk floral yaitu bunga yang merepresentasikan kecantikan sekaligus menggambarkan sebuah tempat bagi para wanita untuk menikmati perawatan rambut dan tubuh yang penuh dengan perhatian dan kenyamanan.
                         </span>
@@ -204,7 +219,7 @@
             <div class="container catalogue-container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-4">
-                        <h4>Gallery</h4>
+                        <h4 class="headline">Gallery</h4>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -247,7 +262,7 @@
                 <div class="container catalogue-container">
                     <div class="row justify-content-center mb-3">
                         <div class="col-md-4">
-                            <h4>Price List</h4>
+                            <h4 class="headline">Price List</h4>
                         </div>
                     </div>
                     <div class="row justify-content-center text-center">
@@ -293,7 +308,7 @@
             </div>
         </section>
 
-        <section class="contact-section " id="contact ">
+        <section class="contact-section " id="contact">
             <div class="container contact-container pt-5 pb-5 ">
                 <div class="row ">
                     <div class="col-md-2 ">
