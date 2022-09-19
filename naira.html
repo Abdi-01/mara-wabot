@@ -60,6 +60,19 @@
             width: 100vw;
         }
         
+        @font-face {
+            font-family: 'JasminReguler';
+            src: url('font/Jasmin\ Regular.ttf') format('truetype');
+            /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+        }
+        /* * {
+            font-family: "JasminReguler" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        } */
+        
         @media (max-width: 768px) {
             #dual-collapse2 {
                 text-align: center;
@@ -67,6 +80,15 @@
             .first-content img {
                 height: 50%;
                 width: 100%;
+            }
+            .navbar-brand {
+                margin-left: -30%;
+            }
+            .contact-container .row .col img {
+                display: none;
+            }
+            .contact-container .row .col-md-2 {
+                margin-bottom: 40px;
             }
         }
     </style>
